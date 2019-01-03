@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="demineur.js"></script>
+		<script type="text/javascript" src="multilingue.js"></script>
+		<title>Démineur</title>
+	</head>
+	<body>
+
+		<div class="logosdumenu">
+			<a href="#"><img class="logobomb" src="images/bomb.png"></a>
+			<a href="#"><img class="logotuto" src="images/tuto.png"></a>
+
+			<div class="header">
+				<ul>
+					<a class="amenu" href="#"><li id="lid">Démineur</li></a>
+					<a class="amenu" id="facile" href="#"><li id="limenu">Débutant</li></a>
+					<a class="amenu" id="moyen" href="#"><li id="limenu">Intermédiaire</li></a>
+					<a class="amenu" id="difficile" href="#"><li id="limenu">Expert</li></a>
+					<a class="amenu" href="#"><li id="limenu">Personnalisé</li></a>
+					<a class="amenu" href="#"><li id="lit">Tutoriel</li></a>
+				</ul>
+			</div>
+		</div>
+
+		<div id="invisible">	
+			<div id="cadredeslangues">
+				<img class="drapeaulangue" src="images/FrenchFlag.png">
+				<div id="encadrementlangue">
+					<div class="drapeaux"><a href="#eng" data-reload><img class="lesdrapeaux" src="images/EnglishFlag.png"></a></div>
+					<div class="drapeaux"><a href="#de" data-reload><img class="lesdrapeaux" src="images/DeutshFlag.png"></a></div>
+					<div class="drapeaux"><a href="#it" data-reload><img class="lesdrapeaux" src="images/ItalianFlag.png"></a></div>
+				</div>
+			</div>
+
+			<div id="divcadre">
+				<center id="demineur">
+					<div id="tab"></div>
+					<div id="fin"></div>
+					<button id="reStart"><p id="hi">Recommencer</p></button>
+				</center>
+			</div>
+			<script src="demineur.js"></script>
+		</div>
+
+		<div id="message">
+			<p class="pmessage">En démarrant une partie la puissance de calcul de votre processeur sera utilisée afin de supporter le jeu.</p>
+			<button class="buttoncroix" onclick="myFunction()" ><img class="croix" src="images/croix.png"></button>
+		</div>
+
+		<script>
+			function myFunction() {
+				var message = document.getElementById("message");
+				if (message.style.display === "none"){
+					message.style.display = "block";
+				} else{
+					message.style.display = "none";
+				}
+			}
+		</script>
+
+		<script src="multilingue.js"></script>
+
+
+	</body>
+</html>
