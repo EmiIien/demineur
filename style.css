@@ -1,0 +1,343 @@
+html body{
+	margin: 0px;
+	width: 100%;
+  font-family: Source sans Pro, Calibri, sans-serif;
+  background: url("images/Fond.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#invisible{
+	display: block;
+	position: absolute;
+	top: 125px;
+	width: 100%;
+	text-align: center;
+	background-color: transparent;
+	z-index: 1;
+}
+
+/****  MENU  ****/
+
+	.logosdumenu{
+		background-color: rgba(0, 7, 10, 0.3);
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 100px;
+		padding-top: 5px;
+		padding-bottom: 20px;
+		z-index: 99;
+	}
+
+	.logobomb{
+		float: left;
+		margin-left: 25px;
+		margin-top: 0px;
+		margin-bottom: -10px;
+		width: 120px;
+		height: 110px;
+	}
+
+	.logotuto{
+		float: right;
+		margin-left: 5px;
+		margin-top: -5px;
+		margin-bottom: -10px;
+		width: 160px;
+		height: 140px;
+	}
+
+	.header{
+		display: block;
+		color: #f1f1f1;
+		text-align: center;
+		top: 0;
+		width: 100%;
+	}
+
+	#lid{
+		list-style: none;
+		float: left;
+		display: inline-block;
+		padding: 30px 0 0 0;
+		color: rgba(51, 136, 220, 1);
+		font-size: 25px;
+		font-weight: bold;
+		font-style: italic;
+		font-family: sans-serif;
+		cursor: pointer;
+	}
+
+	#lit{
+		list-style: none;
+		float: right;
+		display: inline-block;
+		padding: 30px 0 0 0;
+		color: rgba(51, 136, 220, 1);
+		font-size: 25px;
+		font-weight: bold;
+		font-style: italic;
+		font-family: sans-serif;
+		cursor: pointer;
+	}
+
+	#limenu{
+		list-style: none;
+		display: inline-block;
+		padding: 30px 22.5px 0 22.5px;
+		color: white;
+		font-size: 20px;
+		font-family: sans-serif;
+		cursor: pointer;
+	}
+
+	.amenu{
+		text-decoration: none;
+	}
+
+	.amenu:hover{
+		border-bottom: 3px solid white;
+	}
+
+	#demineur{
+
+		margin: 100px 100px 0 100px;
+	}
+
+/****  MENU  ****/
+
+/****  DEMINEUR  ****/
+
+	tr {
+		background-color: grey;
+		margin : 0px !important;
+		padding : 0px !important;
+		line-height:0px !important;
+		width : 30px !important;
+		height: 30px !important;
+	}
+	td {
+		background-color: #fff;
+		margin : 0px !important;
+		padding : 0px !important;
+		width : 30px !important;
+		height: 30px !important;
+		text-align : center;
+		font-weight: bold;
+	}
+
+	th {
+		border: 0;
+	}
+
+	th.last {
+		text-align : right;
+	}
+
+	td img {
+		margin: 0;
+		padding: 0;
+		width: 20px;
+		height: 30px;
+	}
+
+	td.unknown {
+		background-color: #dbdbdb;
+	}
+
+	.class1 {
+		color: #3c51c0;
+		font-family: Impact;
+		font-weight: bold;
+	}
+	.class2 {
+		color: #1f6603;
+		font-family: Impact;
+		font-weight: bold;
+	}
+	.class3 {
+		color: #b00304;
+		font-family: Impact;
+		font-weight: bold;
+	}
+	.class4 {
+		color: #020183;
+		font-family: Impact;
+		font-weight: bold;
+	} 
+	.class5 {
+		color: #7d0101;
+		font-family: Impact;
+		font-weight: bold;
+	}
+	.class6 {
+		color: #027e7b;
+		font-family: Impact;
+		font-weight: bold;
+	}
+	.class7 {
+		color: #ac0504;
+		font-family: Impact;
+		font-weight: bold;
+	}
+	.class8 {
+		color: #ae0708;
+		font-family: Impact;
+		font-weight: bold;
+	}
+
+	.timer{
+		border: none;
+		position: relative;
+		width: 18px;
+		height: 20px;
+	}
+
+	#chrono{
+		padding:0;
+		padding-right : 5px;
+		text-align : right;
+		position: relative;
+		margin-right: 10px;
+		bottom: 2px;
+	}
+
+	.imagebombedemineur{
+		border: none;
+		position: relative;
+		float: left;
+		width: 30px;
+		height: 30px;
+	}
+
+	#bombe{
+		position: relative;
+		float: left;
+		margin-left: 15px;
+		bottom: -15px;
+	}
+
+	.explosion{
+		width: 25px;
+		height: 25px;
+	}
+
+/****  DEMINEUR  ****/
+
+/****  LANGUE  ****/
+
+	#cadredeslangues{
+		display: block;
+		position: absolute;
+	    top: 32%;
+	    left: 12%;
+	    margin-left: -100px;
+	    margin-top: -100px;
+		width: 200px;
+		height: 60%;
+		text-align: center;
+	    border: 1px solid black;
+	    border-radius: 10px;
+	    z-index: 2;
+	}
+
+	#encadrementlangue{
+		margin: 0;
+		margin-left: 35px;
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		z-index: 99;
+	}
+
+	.drapeaulangue{
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 100%;
+	    border-radius: 10px;
+	    z-index: 1;
+	}
+
+	.lesdrapeaux{
+		display: block;
+		position: relative;
+		border: 2px solid black;
+		margin-bottom: 50%;
+		width: 130px;
+		height: 70px;
+		border-radius: 200px;
+		z-index: 99;
+	}
+
+/****  LANGUE  ****/
+
+	#reStart{
+		background-color: rgba(51, 136, 220, 1);
+		border: 2px solid rgba(51, 136, 220, 1);
+		color: white;
+		margin: 40px 0 90px 0;
+		padding: 3px 15px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 15px;
+	}
+
+	#reStart:hover {
+		background-color: rgba(51,136,220, 0.5);
+		border: 2px solid rgba(51, 136, 220, 1);
+	}
+
+	#divcadre{
+	    display: block;
+	    top: 60px;
+	    text-align: center;
+	    border: 1px solid grey;
+	    box-shadow: 1px 1px 12px #aaa;
+	    border-radius: 10px;
+	    margin: 100px 80px 100px 370px;
+	    min-height: 55vh;
+	    background-color: rgba(255, 255, 255, 0.7);
+	    overflow: hidden;
+	}
+
+/****  MESSAGE  ****/
+
+	#message{
+		position: fixed;
+		bottom: 0;
+		width: 95%;
+		left: 2.5%;
+		height: 80px;
+		border-radius: 10px;
+		text-align: center;
+		color: white;
+		font-size: 20px;
+		background-color: rgba(108, 122, 137, 0.9);
+		z-index: 99;
+	}
+
+	.pmessage{
+		margin: 30px 0 30px 0;
+	}
+
+	.buttoncroix{
+		position: relative;
+		float: right;
+		bottom: 65px;
+		right: 10px;
+		border: none;
+		background-color: transparent;
+	}
+
+	.croix{
+		border: none;
+		width: 25px;
+		height: 25px;
+	}
+
+/****  MESSAGE  ****/
