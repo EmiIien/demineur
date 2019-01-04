@@ -19,7 +19,7 @@ function Demineur(hauteur, largeur, nbBombe)
 	 * Nombre de bombe dans le démineur
 	 * Vérification : au moins la moitié des Cases doivent être vides
 	 **/
-	this.bombe = (nbBombe > (largeur * hauteur) / 2)?parseInt((largeur * hauteur) / 2):nbBombe;
+	this.bombe = (nbBombe > (largeur * hauteur) / 4)?parseInt((largeur * hauteur) / 4):nbBombe;
 	/**
 	 *	Nombre de bombe restantes dans le démineur
 	 *	Nombre théorique, il dépend des drapeaux mit par le joueur (un drapeau posé = une bombe trouvée)
@@ -411,11 +411,11 @@ function startHard()
  **/
 function startPerso()
 {
-	var ligne = prompt("Nombre de ligne ?");
-    var colonne = prompt("Nombre de colonne ?")
-	var bombe = prompt("Nombre de bombe ?")
+	ligne = prompt("Nombre de ligne ?");
+    colonne = prompt("Nombre de colonne ?");
+	bombe = prompt("Nombre de bombe ?");
 
-	start(ligne, colonne, bombe);
+	start(ligne, colonne, 2);
 }
 
 /**
