@@ -266,7 +266,7 @@ function Case(ligne, colonne)
 			// Si la case n'est pas bloquée on la bloque
 				this.etat = 2;
 				demineur.bombeRest--;
-				document.getElementById(getTwoNumber(this.ligne) + "" + getTwoNumber(this.colonne)).innerHTML = "<img src=\"images/drapeau.svg\"/>";
+				document.getElementById(getTwoNumber(this.ligne) + "" + getTwoNumber(this.colonne)).innerHTML = "<img src=\"images/drapeau.png\"/>";
 			} else if (this.etat == 2) { //Si la case est déjà bloquée on la débloque
 				this.etat = 0;
 				demineur.bombeRest++;
@@ -406,6 +406,19 @@ function startHard()
 }
 
 /**
+ * Fonction activée lorsque l'utilisateur clique sur le bouton perso
+ * Lance une partie avec les paramètre entré par l'utilisateur
+ **/
+function startPerso()
+{
+	var ligne = prompt("Nombre de ligne ?");
+    var colonne = prompt("Nombre de colonne ?")
+	var bombe = prompt("Nombre de bombe ?")
+
+	start(ligne, colonne, bombe);
+}
+
+/**
  *	Fonction activée lorsque l'utilisateur clique sur le bouton reStart
  * 	Relance un demineur avec les memes parametres
 **/
@@ -439,6 +452,7 @@ function getTwoNumber(number)
 	document.getElementById('facile').addEventListener('click', startEasy, false);
 	document.getElementById('moyen').addEventListener('click', startMedium, false);
 	document.getElementById('difficile').addEventListener('click', startHard, false);
+	document.getElementById('perso').addEventListener('click', startPerso, false);
 
 var joue = false;
 var demineur;
