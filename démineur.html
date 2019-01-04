@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="demineur.js"></script>
-		<script type="text/javascript" src="multilingue.js"></script>
 		<title>Démineur</title>
 	</head>
 	<body>
@@ -15,54 +14,57 @@
 
 			<div class="header">
 				<ul>
-					<a class="amenu" href="#"><li id="lid">Démineur</li></a>
+					<a class="amenu" href="demineur.html"><li id="lid">Démineur</li></a>
 					<a class="amenu" id="facile" href="#"><li id="limenu">Débutant</li></a>
 					<a class="amenu" id="moyen" href="#"><li id="limenu">Intermédiaire</li></a>
 					<a class="amenu" id="difficile" href="#"><li id="limenu">Expert</li></a>
-					<a class="amenu" href="#"><li id="limenu">Personnalisé</li></a>
-					<a class="amenu" href="#"><li id="lit">Tutoriel</li></a>
+					<a class="amenu" id="perso" href="#"><li id="limenu">Personnalisé</li></a>
+					<a class="amenu" href="tutoriel.html"><li id="lit">Tutoriel</li></a>
 				</ul>
 			</div>
 		</div>
 
-		<div id="invisible">	
-			<div id="cadredeslangues">
-				<img class="drapeaulangue" src="images/FrenchFlag.png">
-				<div id="encadrementlangue">
-					<div class="drapeaux"><a href="#eng" data-reload><img class="lesdrapeaux" src="images/EnglishFlag.png"></a></div>
-					<div class="drapeaux"><a href="#de" data-reload><img class="lesdrapeaux" src="images/DeutshFlag.png"></a></div>
-					<div class="drapeaux"><a href="#it" data-reload><img class="lesdrapeaux" src="images/ItalianFlag.png"></a></div>
+		<article>
+			<div id="invisible">    
+                <div id="cadredeslangues">
+                    <a href="#" ><img class="lesdrapeaux" src="images/FrenchFlag.png"></a>
+                    <a href="#" ><img class="lesdrapeaux" src="images/EnglishFlag.png"></a>
+                    <a href="#" ><img class="lesdrapeaux" src="images/DeutshFlag.png"></a>
+                    <a href="#" ><img class="lesdrapeaux" src="images/ItalianFlag.png"></a>
+                </div>
+
+				<div id="divcadre">
+					<center id="demineur">
+						<div id="tab"></div>
+						<div id="fin"></div>
+						<button id="reStart"><p id="hi">Recommencer</p></button>
+					</center>
 				</div>
+				<script src="demineur.js"></script>
 			</div>
 
-			<div id="divcadre">
-				<center id="demineur">
-					<div id="tab"></div>
-					<div id="fin"></div>
-					<button id="reStart"><p id="hi">Recommencer</p></button>
-				</center>
+			<div id="message">
+				<p class="pmessage">En démarrant une partie la puissance de calcul de votre processeur sera utilisée afin de supporter le jeu.</p>
+				<button class="buttoncroix" onclick="hidefunction()" ><img class="croix" src="images/croix.png"></button>
 			</div>
-			<script src="demineur.js"></script>
-		</div>
 
-		<div id="message">
-			<p class="pmessage">En démarrant une partie la puissance de calcul de votre processeur sera utilisée afin de supporter le jeu.</p>
-			<button class="buttoncroix" onclick="myFunction()" ><img class="croix" src="images/croix.png"></button>
-		</div>
-
-		<script>
-			function myFunction() {
-				var message = document.getElementById("message");
-				if (message.style.display === "none"){
-					message.style.display = "block";
-				} else{
-					message.style.display = "none";
+			<script>
+				function hidefunction() {
+					var message = document.getElementById("message");
+					if (message.style.display === "none"){
+						message.style.display = "block";
+					} else{
+						message.style.display = "none";
+					}
 				}
-			}
-		</script>
-
-		<script src="multilingue.js"></script>
-
+			</script>
+		</article>
+		<footer>
+			<div class="footer">
+				<p>Vous pouvez retrouver les sites des créateurs de ce site ici :</p>
+				<a class="siteweb" href="http://emilien.denot.pro/" target="_blank">emilien.denot.pro</a> | <a class="siteweb" href="#" target="_blank"">Loïc-Chovet.fr</a>
+			</div>
+		</footer>
 
 	</body>
 </html>
