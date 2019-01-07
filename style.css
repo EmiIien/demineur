@@ -375,7 +375,7 @@ html, body{
 
 	.tutop{
 		display: block;
-		width: 50%;
+		width: 54%;
 		min-width: 10%;
 		float: right;
 		margin-right: 10px;
@@ -407,7 +407,7 @@ html, body{
 	#bgimgd{
 		display: block;
 		background-color: rgba(255, 255, 255, 0.7);
-		margin: -23px -30px -30px 55px;
+		margin: -30px 0px -30px 560px;
 		padding: 5px;
 		text-align: center;
 		border: 1px solid grey;
@@ -444,7 +444,23 @@ html, body{
 
 	.tutofin{
 		display: block;
-		margin-top: 560px; 
-		margin-bottom: 50px;
+		text-align: center;
+		width: 50%;
+		height: 100px;
+		margin-top: 56%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	.tutoa{
+		color: black;
+		text-decoration: none;
+	}
+
+	.tutoa:hover{
+		color: white;
+		text-decoration: underline;
 	}
 
